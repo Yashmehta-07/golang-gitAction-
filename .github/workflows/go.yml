@@ -29,10 +29,10 @@ jobs:
 
     - name: Build Docker image
       run: |
-          docker build -t yashmehta07/golang_gitAction:latest .
-          docker push yashmehta07/golang_gitAction:latest
+          docker build -t yashmehta07/golang_gitaction:latest .
+          docker push yashmehta07/golang_gitaction:latest
 
     - name: Deploy Docker container
       run: |
-          docker run -d -p 8000:8080 yashmehta07/golang_gitAction:latest
+          docker run -d -p 8000:8080 yashmehta07/golang_gitaction:latest
 
